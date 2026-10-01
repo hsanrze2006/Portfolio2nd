@@ -39,6 +39,28 @@
   transform: rotate(180deg);
 }
 @media (max-width: 1024px) {
+  /* Projects page decorative shapes */
+  .projects-container .dot-shape,
+  .projects-container .sq-shape,
+  .small-project-container .dot-shape,
+  .small-project-container .sq-shape,
+
+  /* About page decorative shapes */
+  .about-container .shape-1,
+  .about-container .shape-2,
+  .skill-container .dot-shape,
+  .myfunfact-container .sq-shape,
+  .myfunfact-container .dot-shape,
+  .myfunfact-wrapper .right .dot-shape,
+  .myfunfact-wrapper .right .logo-shape,
+
+  /* Other decorative shapes */
+  .project-container .dots-shape,
+  .project-container .sq-shape,
+  .slogan-container .shape,
+  .contact-container .shape {
+    display: none;
+  }
   .projects-container,
   .page-title,
   .small-project-container,
@@ -236,4 +258,12 @@
     align-items: start;
     gap: 1rem;
   }
+}
+
+
+/* Final safety net */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

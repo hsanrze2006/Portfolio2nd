@@ -46,7 +46,7 @@
   .main-header {
     padding: 10px;
   }
-  .small-project-container .sq-shape{
+  .small-project-container .dot-shape{
     display: none;
   }
   .projects-container .sq-shape{
@@ -61,6 +61,9 @@
   .skill-container .skills-list-wrapper .row-skills .skills-box {
     flex: 1 250px;
   }
+  .skill-container .dot-shape{
+    display: none;
+  }
   .myfunfact-wrapper .left {
     width: 100%;
   }
@@ -69,6 +72,9 @@
   }
   .myfunfact-container {
     padding: 10px;
+  }
+  .myfunfact-container .dot-shape{
+    display: none;
   }
   .socials-container {
     display: none;

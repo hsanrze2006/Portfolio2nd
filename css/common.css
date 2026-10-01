@@ -1,0 +1,270 @@
+.primary-btn {
+  border: 1px solid var(--color-primary);
+  color: var(--color-text);
+  padding: 8px 16px;
+  background: var(--color-bg);
+  transition: background 0.2s ease;
+  display: inline-block;
+}
+.primary-btn:hover {
+  background: rgba(var(--color-primary-rgb), 0.2);
+}
+
+.secondary-btn {
+  border: 1px solid var(--color-muted);
+  color: var(--color-muted);
+  padding: 8px 16px;
+  background: var(--color-bg);
+  transition: background 0.2s ease;
+}
+.secondary-btn:hover {
+  background: rgba(var(--color-muted-rgb), 0.2);
+  color: var(--color-text);
+}
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-box .title {
+  font-size: 2rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.title-box .title::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background: var(--color-primary);
+  margin: 0 15px;
+}
+
+.title-box .title .title-highlight {
+  color: var(--color-primary);
+}
+/*========== Header styles ==========*/
+.main-header {
+  max-width: 1024px;
+  width: calc(100% - 40px);
+  width: 100%;
+  padding: 5px;
+  height: 61px;
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 99;
+  background-color: var(--color-bg);
+}
+.main-header .logo-wrapper {
+  display: flex;
+  gap: 6px;
+}
+/* navigation list */
+.main-header .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main-header .nav-list .nav-link {
+  color: var(--color-muted);
+  transition: color 0.3s ease;
+}
+.main-header .nav-list .nav-link:hover {
+  color: var(--color-text);
+}
+.main-header .nav-list .nav-link .sharp-sign {
+  color: var(--color-primary);
+}
+/* active link */
+.main-header .nav-list .nav-link.active {
+  color: var(--color-text);
+}
+
+/*========== Fixed social icon in mobile view ==========*/
+.nav-list .social-mobile .social-list{
+  display: none;
+  gap: 1rem;
+  font-size: 2rem;
+  align-items: center;
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*========== Fixed social icon ==========*/
+.socials-container {
+  position: fixed;
+  z-index: 100;
+  left: 30px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-bg);
+}
+.socials-container .social-line {
+  width: 1px;
+  height: 150px;
+  background: var(--color-muted);
+}
+.socials-container .social-list {
+  color: var(--color-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.socials-container .social-list .social-link {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+}
+.socials-container .social-list .social-link:hover {
+  color: var(--color-text);
+}
+/*=================== Footer styles ===================*/
+.main-footer {
+  border-top: 1px solid var(--color-muted);
+  padding: 2rem 0;
+}
+/* footer container */
+.main-footer .footer-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* logo */
+.footer-container .logo-wrapper {
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+.footer-container .logo-wrapper .logo {
+  display: flex;
+  gap: 0.5rem;
+}
+/* right section */
+.footer-container .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer-container .right-section h4 {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.footer-container .right-section a {
+  color: var(--color-muted);
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+.footer-container .right-section a:hover {
+  color: var(--color-text);
+}
+.copyright-text {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--color-muted);
+  font-weight: 200;
+}
+
+/*========== page title ==========*/
+.page-title {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.page-title .title {
+  font-size: 2rem;
+}
+.page-title .title .highlight {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+.page-title .describ-title {
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+/*==================== about page ====================*/
+.about-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* left section */
+.about-wrapper .left-section {
+  padding: 3rem 0;
+  width: 50%;
+}
+.about-wrapper .left-section .about-description {
+  margin-bottom: 3rem;
+}
+/* right section */
+.about-wrapper .right-section {
+  position: relative;
+}
+.about-wrapper .right-section .main-image {
+  border-bottom: 1px solid var(--color-primary);
+  width: 339px;
+  height: 507px;
+  object-fit: cover;
+  object-position: center;
+}
+.about-wrapper .right-section .shape1 {
+  position: absolute;
+  left: -12px;
+  top: 83px;
+}
+.about-wrapper .right-section .shape2 {
+  position: absolute;
+  right: 15px;
+  bottom: 177px;
+}
+/*=================== skills styles ===================*/
+.skill-container {
+  max-width: 1024px;
+  margin: 2rem auto;
+  position: relative;
+}
+/* box */
+.skills-list-wrapper .skills-box {
+  border: 1px solid var(--color-muted);
+  margin-bottom: 1rem;
+}
+.skills-list-wrapper .skills-box .box-header {
+  border-bottom: 1px solid var(--color-muted);
+  padding: 0.5rem;
+  font-weight: 500;
+}
+.skills-list-wrapper .skills-box .box-content {
+  color: var(--color-muted);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}

@@ -1,0 +1,38 @@
+/*=================== color tokens ===================*/
+:root {
+  --color-primary: #c778dd;
+  --color-primary-rgb: 199, 120, 221;
+  --color-bg: #282c33;
+  --color-muted: #abb2bf;
+  --color-muted-rgb: 171, 178, 191;
+  --color-text: #ffffff;
+}
+
+@font-face {
+  font-family: "fira code";
+  src: url("../assets/fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "fira code", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+button,
+input,
+textarea,
+select {
+  font-family: "fira code", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}

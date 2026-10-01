@@ -1,0 +1,169 @@
+/*=================== project container ===================*/
+.projects-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+/* shape */
+.projects-container .dot-shape {
+  position: absolute;
+  top: 139px;
+  left: -28%;
+}
+.projects-container .sq-shape {
+  position: absolute;
+  top: 0%;
+  right: -34%;
+}
+/*=================== project list ===================*/
+.project-list {
+  margin-top: 2rem;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.project-list .project-card {
+  border: 1px solid var(--color-muted);
+}
+.project-list .project-card img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.project-list .project-card .project-tech {
+  color: var(--color-muted);
+  padding: 10px;
+  border-bottom: 1px solid var(--color-muted);
+  border-top: 1px solid var(--color-muted);
+}
+.project-list .project-card .caption-card {
+  color: var(--color-muted);
+  padding: 1rem;
+}
+.project-list .project-card .caption-card .name-item {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+.project-list .project-card .caption-card .info-item {
+  margin: 1rem 0;
+}
+.project-list .project-card .caption-card .card-btns {
+  display: flex;
+  gap: 1rem;
+}
+/*=================== small project list ===================*/
+.small-project-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+/* shape */
+.small-project-container .dot-shape {
+  position: absolute;
+  top: 68%;
+  right: -27%;
+}
+.small-project-container .sq-shape {
+  position: absolute;
+  top: 46%;
+  left: -34%;
+}
+.small-project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.small-project-wrapper .row-small-project {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  justify-content: center;
+
+}
+.small-project-wrapper .row-small-project .box-small-project {
+  border: 1px solid var(--color-muted);
+}
+.small-project-wrapper .row-small-project .box-small-project .skills {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--color-muted);
+}
+.small-project-wrapper
+  .row-small-project
+  .box-small-project
+  .skills
+  .skill-work {
+  color: var(--color-muted);
+}
+.small-project-wrapper
+  .row-small-project
+  .box-small-project
+  .title-small-project {
+  font-weight: 500;
+  margin: 1rem;
+}
+.small-project-wrapper .row-small-project .box-small-project .caption {
+  margin: 0 1rem;
+  color: var(--color-muted);
+}
+.small-project-wrapper .row-small-project .box-small-project .primary-btn {
+  margin: 1rem;
+}
+/*=================== Footer styles ===================*/
+.main-footer {
+  border-top: 1px solid var(--color-muted);
+  padding: 2rem 0;
+  position: relative;
+}
+/* shape */
+.main-footer .dot-shape {
+  position: absolute;
+  top: 26%;
+  left: -41px;
+}
+/* footer container */
+.main-footer .footer-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* logo */
+.footer-container .logo-wrapper {
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+.footer-container .logo-wrapper .logo {
+  display: flex;
+  gap: 0.5rem;
+}
+/* right section */
+.footer-container .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer-container .right-section h4 {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.footer-container .right-section a {
+  color: var(--color-muted);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+.footer-container .right-section a:hover {
+  color: var(--color-text);
+}
+.copyright-text {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--color-muted);
+  font-weight: 200;
+}

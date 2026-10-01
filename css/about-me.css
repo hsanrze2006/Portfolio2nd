@@ -1,0 +1,79 @@
+/*=================== About styles ===================*/
+
+/* shape */
+.about-container .shape-1 {
+  position: absolute;
+  top: 60px;
+  right: -325px;
+}
+.about-container .shape-2 {
+  position: absolute;
+  top: 173px;
+  left: -289px;
+}
+/*=================== skill styles ===================*/
+/* skills list */
+.skill-container .skills-list-wrapper .row-skills {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.skill-container .skills-list-wrapper .row-skills .skills-box {
+  flex: 1 0;
+}
+/* shape */
+.skill-container .dot-shape {
+  position: absolute;
+  top: -30px;
+  right: -278px;
+  scale: 1.1;
+}
+/*=================== my fun fact styles ===================*/
+.myfunfact-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+/* shape */
+.myfunfact-container .sq-shape {
+  position: absolute;
+  top: 83px;
+  left: -308px;
+}
+.myfunfact-container .dot-shape {
+  position: absolute;
+  bottom: -100px;
+  right: -237px;
+}
+.myfunfact-wrapper {
+  display: flex;
+  align-items: center;
+}
+.myfunfact-wrapper .left {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 75%;
+}
+.myfunfact-wrapper .left .fact {
+  padding: 0.5rem;
+  border: 1px solid var(--color-muted);
+}
+.myfunfact-wrapper .left .fact p {
+  color: var(--color-muted);
+}
+.myfunfact-wrapper .left .fact p span {
+  color: var(--color-text);
+}
+.myfunfact-wrapper .right .dot-shape {
+  position: absolute;
+  top: 10px;
+  right: 196px;
+}
+.myfunfact-wrapper .right .logo-shape {
+  position: absolute;
+  top: 74px;
+  right: 42px;
+}

@@ -1,0 +1,271 @@
+/*=================== info-banner ===================*/
+
+.hsan-info-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 7rem auto;
+}
+/* left side */
+.hsan-info-banner .left .banner-title {
+  font-size: 2.4rem;
+}
+.hsan-info-banner .left .banner-title .highlight {
+  color: var(--color-primary);
+}
+.hsan-info-banner .left .banner-text {
+  margin: 2rem 0;
+  color: var(--color-muted);
+  font-size: 1.2rem;
+}
+
+/* right side */
+.hsan-info-banner .right {
+  position: relative;
+}
+.right .banner-img {
+  width: 457px;
+  height: 386px;
+}
+.hsan-info-banner .right .sub-text-img {
+  position: relative;
+  bottom: 10px;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+  border: 1px solid var(--color-muted);
+  padding: 8px;
+  color: var(--color-muted);
+}
+.hsan-info-banner .right .sub-text-img .highlight {
+  color: var(--color-text);
+}
+.hsan-info-banner .right .sub-text-img .color-box {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: var(--color-primary);
+  border: 1px solid var(--color-muted);
+}
+.hsan-info-banner .right .logo-shape {
+  position: absolute;
+  top: 14%;
+  z-index: -1;
+}
+.hsan-info-banner .right .dots-shape {
+  position: absolute;
+  top: 58%;
+  right: 10px;
+  z-index: 98;
+}
+/*=================== Slogan style ===================*/
+.slogan-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* shape */
+.slogan-container .shape {
+  position: absolute;
+  top: 20px;
+  right: -250px;
+}
+.slogan-container .slogan-box {
+  display: inline-block;
+  border: 1px solid var(--color-muted);
+  position: relative;
+  padding: 2rem;
+}
+.slogan-container .slogan-box h3 {
+  font-size: 1.5rem;
+}
+.slogan-container .slogan-box .quote {
+  position: absolute;
+  background: var(--color-bg);
+  z-index: 1;
+}
+.slogan-container .slogan-box .left-quote {
+  left: 10px;
+  top: -15px;
+}
+.slogan-container .slogan-box .right-quote {
+  right: 10px;
+  bottom: -15px;
+  rotate: 180deg;
+}
+.slogan-container .author {
+  display: inline-block;
+  padding: 1rem;
+  border: 1px solid var(--color-muted);
+  font-size: 24px;
+  position: absolute;
+  right: -1px;
+  top: 96px;
+}
+/*=================== project title ===================*/
+.project-container {
+  max-width: 1024px;
+  margin: 100px auto;
+  position: relative;
+}
+/* shapes */
+.project-container .dots-shape {
+  position: absolute;
+  top: 55px;
+  left: -297px;
+}
+.project-container .sq-shape {
+  position: absolute;
+  right: -340px;
+  top: 247px;
+}
+/* title */
+.title::after {
+  width: 400px;
+}
+.project-container .project-title-box .view-all-link {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+.project-container .project-title-box .view-all-link:hover {
+  color: var(--color-primary);
+}
+/*=================== project list ===================*/
+.project-list {
+  margin-top: 2rem;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.project-list .project-card {
+  border: 1px solid var(--color-muted);
+}
+.project-list .project-card img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.project-list .project-card .project-tech {
+  color: var(--color-muted);
+  padding: 10px;
+  border-bottom: 1px solid var(--color-muted);
+  border-top: 1px solid var(--color-muted);
+}
+.project-list .project-card .caption-card {
+  color: var(--color-muted);
+  padding: 1rem;
+}
+.project-list .project-card .caption-card .name-item {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+.project-list .project-card .caption-card .info-item {
+  margin: 1rem 0;
+}
+.project-list .project-card .caption-card .card-btns {
+  display: flex;
+  gap: 1rem;
+}
+/*=================== skills styles ===================*/
+/* title */
+.skill-container .title::after {
+  width: 300px;
+}
+/* skills list */
+.skill-container .skills-list-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+/* column */
+.skills-list-wrapper .col-skills {
+  width: 100%;
+}
+
+/*=================== About styles ===================*/
+
+/* shape */
+.about-container .shape-1 {
+  position: absolute;
+  top: 173px;
+  left: -335px;
+}
+.about-container .shape-2 {
+  position: absolute;
+  right: -263px;
+  top: 336px;
+  scale: 1.3;
+}
+
+.about-container .title-box .title::after {
+  width: 400px;
+}
+
+/*=================== Contact styles ===================*/
+.contact-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+/* shape */
+.contact-container .shape {
+  position: absolute;
+  left: -289px;
+  top: 111px;
+}
+
+/* title */
+.contact-container .title-box .title::after {
+  width: 200px;
+}
+
+.contact-wrapper {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* left section */
+.contact-wrapper .left-section {
+  width: 50%;
+}
+
+.contact-wrapper .left-section .contact-description {
+  color: var(--color-muted);
+}
+/* right section */
+.contact-wrapper .right-section .message-box {
+  padding: 1rem;
+  border: 1px solid var(--color-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-wrapper .right-section .message-box .message-header-title {
+  color: var(--color-text);
+  font-weight: 500;
+  text-align: center;
+}
+.contact-wrapper .right-section .message-box .social-list {
+  color: var(--color-muted);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.contact-wrapper .right-section .message-box .social-link {
+  transition: color 0.3s ease;
+}
+.contact-wrapper .right-section .message-box .social-link:hover {
+  color: var(--color-text);
+}

@@ -1,0 +1,233 @@
+#checkbox2 {
+  display: none;
+}
+
+.toggle2 {
+  display: none;
+}
+
+.bars {
+  height: 3px;
+  background-color: white;
+  border-radius: 15px;
+  align-self: center;
+}
+
+#bar4 {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+#bar5 {
+  width: 50%;
+  align-self: flex-end;
+  transition: all 0.3s ease;
+}
+
+#checkbox2:checked + .toggle2 .bars {
+  position: absolute;
+}
+
+#checkbox2:checked + .toggle2 #bar4 {
+  rotate: 45deg;
+}
+#checkbox2:checked + .toggle2 #bar5 {
+  rotate: -45deg;
+  width: 100%;
+}
+
+#checkbox2:checked + .toggle2 {
+  transform: rotate(180deg);
+}
+@media (max-width: 1024px) {
+  .projects-container,
+  .page-title,
+  .small-project-container,
+  .main-footer,
+  .main-header {
+    padding: 10px;
+  }
+  .small-project-container .sq-shape{
+    display: none;
+  }
+  .projects-container .sq-shape{
+    display: none;
+  }
+  .main-footer .dot-shape {
+    display: none;
+  }
+  .skill-container .skills-list-wrapper .row-skills {
+    flex-wrap: wrap;
+  }
+  .skill-container .skills-list-wrapper .row-skills .skills-box {
+    flex: 1 250px;
+  }
+  .myfunfact-wrapper .left {
+    width: 100%;
+  }
+  .myfunfact-wrapper .right {
+    display: none;
+  }
+  .myfunfact-container {
+    padding: 10px;
+  }
+  .socials-container {
+    display: none;
+  }
+  .slogan-container .shape,
+  .project-container .dots-shape,
+  .project-container .sq-shape,
+  .about-container .shape-1,
+  .about-container .shape-2,
+  .contact-container .shape {
+    display: none;
+  }
+  .hsan-info-banner {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-box {
+    padding: 10px;
+  }
+  .project-list {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .project-list .project-card {
+    flex: 1 300px;
+  }
+  .skill-container .skills-list-wrapper {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .col-skills {
+    flex: 1 300px;
+  }
+
+  .about-container .about-wrapper {
+    padding: 20px;
+  }
+  .contact-wrapper {
+    padding: 10px;
+  }
+  .main-footer {
+    padding: 10px;
+  }
+}
+@media (max-width: 860px) {
+  .toggle2 {
+    display: flex;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition-duration: 0.5s;
+  }
+
+  nav .nav-list {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-bg);
+    top: 61px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav .nav-list .nav-link {
+    display: block;
+    margin: 20px 0;
+  }
+  #checkbox2:checked ~ ul {
+    right: 0;
+  }
+  .nav-list .social-mobile .social-list {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  /* hsan-info-banner container */
+  .hsan-info-banner {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .slogan-container {
+    font-size: 0.5rem;
+  }
+
+  .title::after {
+    width: 200px;
+  }
+  .about-container .title-box .title::after {
+    width: 0px;
+  }
+  .about-container .about-wrapper {
+    flex-direction: column;
+  }
+  .about-container .about-wrapper .left-section {
+    width: 100%;
+  }
+  .contact-container .title-box .title::after {
+    width: 0px;
+  }
+  .contact-wrapper {
+    padding: 20px;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .contact-wrapper .left-section {
+    width: 100%;
+  }
+  .contact-wrapper .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-footer {
+    padding: 10px;
+  }
+  .main-footer .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .slogan-container {
+    width: 90%;
+  }
+  .slogan-container .author {
+    left: -1px;
+    top: 100%;
+  }
+  .small-project-container .small-project-wrapper .row-small-project {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .title::after {
+    width: 0px;
+  }
+  .skill-container .title::after {
+    width: 0px;
+  }
+  .right .banner-img {
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+  }
+  .footer-container .logo-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+}
